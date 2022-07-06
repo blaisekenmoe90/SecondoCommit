@@ -1,16 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div id="app">
+    <div class="container">
+    <Formulario/>
+    </div>
+</div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import Formulario from './components/Formulario.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  Formulario
   }
+  
 }
 </script>
 
@@ -22,5 +28,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.container{
+  margin: 100px;
+  padding: 100px;
+  text-align: center;
+  background: rgb(202, 191, 191);
 }
 </style>
